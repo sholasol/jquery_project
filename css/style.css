@@ -329,7 +329,7 @@ section#points-of-sale ul{
     float: left;
     width: 40px;
     height: 30px;
-    background: url(images/logo-sprite.png) no-repeat;
+    background: url(../images/logo-sprite.png) no-repeat;
     text-indent: -10000px;
 }
 
@@ -349,6 +349,21 @@ section#points-of-sale ul{
     display: block;
     width: 100%;
     height: 100%;
+}
+
+
+#tweets h2{
+    background: green;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    width: 250px;
+    text-transform: uppercase;
+    position: relative;
+    top: -45px;
+    margin: 0 auto;
+    border-left: 16px solid #fff;
+    border-right: 16px solid #fff;
 }
 
 
