@@ -58,3 +58,7 @@ button[0].onclick=function(){
         button.text("Unwrapped")
     }
 }
+
+//Removing Content from Page
+$(".button").empty()
+$(".button").remove()
