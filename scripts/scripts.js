@@ -28,7 +28,33 @@ var tweet = "<div style='margin: 20px 0; padding: 10px; background: #eee'> The b
 
 //$("#tweets div").append(tweet)
 //$("#tweets div").prepend(tweet)
+//$("#tweets div p").before(tweet)
+//$("#tweets div p").after(tweet)
 
 //REPLACE THE CONTENT OF <p> tag
 
 $("#tweets div").html(tweet)
+
+// WRAP and UNWRAP
+//wrap each section with div
+// $("section").wrap("<div>")// each one individually
+
+// $("section").wrapAll("<div>")// Get all the section and wrap them collectively
+
+// $("section").unwrap() //unwrap div
+
+var wrapper = "<div class='wrapper'>";
+var button = $(".button");
+var wrapped = true;
+
+button[0].onclick=function(){
+    if(wrapped){
+        $("section").unwrap()
+        wrapped = false;
+        button.text("Wrapped")
+    }else{
+        $("section").wrapAll(wrapper);
+        wrapped = true;
+        button.text("Unwrapped")
+    }
+}
